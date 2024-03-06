@@ -13,11 +13,11 @@ class Loginpage extends StatelessWidget {
       backgroundColor: Color.fromARGB(255, 20, 20, 20),
       body: ListView(children: [
         SizedBox(
-            height: screensize.height / 3,
+            height: screensize.height / 4,
             width: screensize.width,
             child: Image.asset("asset/newcreated.png")),
         Padding(
-          padding: EdgeInsets.only(top: screensize.height / 12),
+          padding: EdgeInsets.only(top: screensize.height / 20),
           child: Textbox(
               child: TextFormField(
             decoration: InputDecoration(border: InputBorder.none),
@@ -36,6 +36,11 @@ class Loginpage extends StatelessWidget {
                 child: Text("Let's Go",
                     style: TextStyle(color: Colors.white, fontSize: 19))),
           ),
+        ),
+        SizedBox(
+          width: screensize.width / 1.4,
+          height: screensize.height / 8,
+          child: Image.asset("asset/carlocation.png"),
         )
       ]),
     );
